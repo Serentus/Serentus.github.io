@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang = "ru">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+<title>Выпадающий список</title>
+<style>
+.dropbtn {
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+	min-width: 165px;
+	max-width: 165px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f3f3ee;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(163, 147, 147, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: rgb(179, 146, 146);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: rgb(0, 0, 0);}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #f3f3ee;  color: rgb(0, 102, 255);}
+
+.menu {
+	padding: 20px;
+	border: 5px solid #f1f1f1;
+	width:170px;
+	background:#369;
+	border-radius: 5px;
+}
+
+.menu ul {
+	list-style: none;
+	margin: 1px;
+	padding: 1px; 
+	border-top: 1px solid rgba(94,94,93,.3);
+}
+
+.menu li:before {
+  font-family: FontAwesome;
+  font-size: 20px;
+  color: #dd3333; 
+  margin-right: 14px;
+}
+.a1 li:nth-child(1):before {content:"\f008";}
+.a2 li:nth-child(1):before {content:"\f001";}
+.a3 li:nth-child(1):before {content:"\f11c";}
+.a4 li:nth-child(1):before {content:"\f11b";}
+
+
+
+</style>
+</head>
+<body>
+<nav class="menu">
+
+<ul>
+<li>
+<div class="dropdown">
+<div class="a1">
+
+  <button class="dropbtn"> <i class="fas fa-film"></i>ФИЛЬМЫ</button>
+  <div class="dropdown-content">
+    <a href="#">Экшн</a>
+    <a href="#">Мелодрамы</a>
+    <a href="#">Сериалы</a>
+	<a href="#">Семейные</a>
+  </div>
+</div>
+</div>
+<p> </p>
+
+<div class="dropdown">
+<div class="a2">
+  <button class="dropbtn"><i class="fas fa-music"></i>МУЗЫКА</button>
+  <div class="dropdown-content">
+    <a href="#">Классика</a>
+    <a href="#">Джаз</a>
+    <a href="#">Рок</a>
+	<a href="#">Грандж</a>
+  </div>
+</div>
+</div>
+<p> <p>
+<div class="dropdown">
+<div class="a3">
+  <button class="dropbtn"><i class="fas fa-keyboard"></i>СОФТ</button>
+  <div class="dropdown-content">
+    <a href="#">Графика</a>
+    <a href="#">3D-моделирование</a>
+    <a href="#">Машинопись</a>
+	<a href="#">Переводчики</a>
+  </div>
+</div>
+</div>
+<p> <p>
+<div class="dropdown">
+<div class="a4">
+  <button class="dropbtn"><i class="fas fa-gamepad"></i>ИГРЫ</button>
+  <div class="dropdown-content">
+    <a href="#">РПГ</a>
+    <a href="#">Шутеры</a>
+    <a href="#">Пасьянсы</a>
+  </div>
+</div>
+</div>
+
+</li>
+</ul>
+</nav>
+
+</body>
+</html>
