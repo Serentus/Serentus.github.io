@@ -47,19 +47,20 @@ function fib(n) {
     return firstnum;
 }
 function fibs(N) {
-    if (N == 0) {
-        return 0;
+    let fibo = [];
+    for (let i = 0; i < N; i++) {
+        fibo.push(fib(i));
     }
-    else {
-        let str = "";
-        for (let i = 0; i < N; i++) {
-            str += fib(i) + ' ';
-        }
-        return str;
-    }
+    return fibo;
 }
 function arrReverseSorted(arr) {
-    return arr.sort((a, b) => b - a);
+    let a = [];
+    arr = arr.split(',');
+    for (let i = 0; i < arr.length; i++) {
+        a.push(arr[i]);
+    }
+    return a.sort((a, b) => b - a);
+}
 }
 function sum(...arr) {
     let s = 0;
