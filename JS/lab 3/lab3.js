@@ -6,7 +6,8 @@ function getDecimal(num) {
                 str = 1 - Number(str);
                 str = str.toFixed(a.length - 1);
             }
-            return str;
+            let numm = Number(str);
+            return numm;
 }
 function ucFirst(str) {
             return (str[0].toUpperCase() + str.slice(1));
