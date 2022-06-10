@@ -12,6 +12,9 @@
     <script>
         "use strict";
         let str = prompt("Введи строку");
+        if(str == null){
+        alert("Ошибка, сообщение отсутствует.");
+        }
         alert(ucFirst(str));
     </script>
 </body>
