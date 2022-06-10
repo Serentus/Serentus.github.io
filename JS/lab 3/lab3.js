@@ -55,7 +55,6 @@ function fibs(N) {
 }
 function arrReverseSorted(arr) {
     let a = [];
-    arr = arr.split(',');
     for (let i = 0; i < arr.length; i++) {
         a.push(arr[i]);
     }
