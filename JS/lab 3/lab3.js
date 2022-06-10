@@ -54,8 +54,7 @@ function fibs(N) {
     return fibo;
 }
 function arrReverseSorted(arr) {
-    let a = arr.slice();
-    return a.sort((a, b) => b - a);
+    return arr.concat().sort((a, b) => b - a);
 }
 
 function sum(...arr) {
