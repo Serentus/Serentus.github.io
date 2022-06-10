@@ -15,8 +15,8 @@
         let arr = [];
         let i = 0;
         let a;
-        while (a!='end') {
-            a = prompt("Введите эл-т массива. end для завершения.");
+        while (!isNaN(a)) {
+            a = prompt("Введите эл-т массива. Символ для завершения.");
             if (!isNaN(a)){
                 arr[i] = +a;
             ++i;
