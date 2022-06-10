@@ -61,7 +61,7 @@ function arrReverseSorted(arr) {
     }
     return a.sort((a, b) => b - a);
 }
-}
+
 function sum(...arr) {
     let s = 0;
     for (let i of arr)
