@@ -53,8 +53,9 @@ function fibs(N) {
     }
     return fibo;
 }
-function arrReverseSorted(er) {
-    return er.sort((a, b) => b - a);
+function arrReverseSorted(arr) {
+    let a = arr.slice();
+    return a.sort((a, b) => b - a);
 }
 
 function sum(...arr) {
